@@ -1,0 +1,20 @@
+select * from customer;
+select * from payment;
+
+
+select  c.name  , sum(amount)  from payment p 
+ join customer c on p.customerid=c.customerid
+group by  c.name having sum(amount)>2000
+
+select c.name , sum(p.amount) paidamount from customer c 
+join payment p on c.customerid=p.customerid
+group by c.name order by sum(p.amount) desc
+
+select c.customerid , c.name, count(*) from payment p
+join customer c on p.customerid=c.customerid
+group by c.customerid , c.name having Count(*)>=2
+
+select c.name , sum(p.amount) paidamount from customer c 
+join payment p on c.customerid=p.customerid
+where p.paymentmode='UPI'
+group by c.name 

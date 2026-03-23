@@ -18,3 +18,38 @@ select c.name , sum(p.amount) paidamount from customer c
 join payment p on c.customerid=p.customerid
 where p.paymentmode='UPI'
 group by c.name 
+
+
+PostgreSQL
+│
+├── Numeric
+│   ├── SMALLINT
+│   ├── INTEGER
+│   ├── BIGINT
+│   ├── DECIMAL / NUMERIC
+│   └── FLOAT
+│
+├── String
+│   ├── CHAR
+│   ├── VARCHAR
+│   └── TEXT
+│
+├── Date & Time
+│   ├── DATE
+│   ├── TIME
+│   ├── TIMESTAMP
+│   └── TIMESTAMPTZ
+│
+├── Boolean
+│   └── TRUE / FALSE
+│
+├── Binary
+│   └── BYTEA
+│
+└── Special
+    ├── JSON / JSONB
+    ├── UUID
+    ├── ARRAY
+    ├── ENUM
+    ├── NETWORK
+    └── GEOMETRIC

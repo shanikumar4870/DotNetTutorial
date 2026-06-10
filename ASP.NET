@@ -2,3 +2,36 @@ I am a .NET Developer with 4 years of experience in designing, developing, and m
 I have strong expertise in C#, JavaScript, Angular, HTML, CSS, Bootstrap, PostgreSQL, and MS SQL Server. I am experienced in API development, database design, 
 bug fixing, performance optimization, Git version control, and deploying applications on AWS servers. I am passionate about building scalable and efficient
 solutions while continuously learning new technologies.
+
+
+Q2. Explain the Architecture of ASP.NET MVC.
+
+Answer:
+
+MVC stands for Model-View-Controller.
+
+Model:
+The Model represents business logic and data. It communicates with the database and processes application data.
+
+View:
+The View is responsible for displaying data to the user. It contains UI elements such as HTML, CSS, JavaScript, and Razor syntax.
+
+Controller:
+The Controller acts as an intermediary between Model and View. It receives user requests, processes them, interacts with the Model, and returns the appropriate View.
+
+Request Flow:
+
+1. User sends request.
+2. Request reaches Controller.
+3. Controller calls Model.
+4. Model fetches data from Database.
+5. Controller passes data to View.
+6. View displays response to user.
+
+Advantages:
+
+* Separation of concerns
+* Better maintainability
+* Easy testing
+* Reusable components
+* Clean architecture
